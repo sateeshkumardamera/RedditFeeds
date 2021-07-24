@@ -9,12 +9,28 @@
 /* Begin PBXBuildFile section */
 		2116998F26AB6CE700CA7AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2116998E26AB6CE700CA7AAC /* AppDelegate.swift */; };
 		2116999126AB6CE700CA7AAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2116999026AB6CE700CA7AAC /* SceneDelegate.swift */; };
-		2116999326AB6CE700CA7AAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2116999226AB6CE700CA7AAC /* ViewController.swift */; };
-		2116999626AB6CE700CA7AAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2116999426AB6CE700CA7AAC /* Main.storyboard */; };
+		2116999326AB6CE700CA7AAC /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2116999226AB6CE700CA7AAC /* FeedsViewController.swift */; };
 		2116999826AB6CEA00CA7AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2116999726AB6CEA00CA7AAC /* Assets.xcassets */; };
 		2116999B26AB6CEA00CA7AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2116999926AB6CEA00CA7AAC /* LaunchScreen.storyboard */; };
 		211699A626AB6CEA00CA7AAC /* RedditFeedsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699A526AB6CEA00CA7AAC /* RedditFeedsTests.swift */; };
 		211699B126AB6CEA00CA7AAC /* RedditFeedsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699B026AB6CEA00CA7AAC /* RedditFeedsUITests.swift */; };
+		211699D526AB778600CA7AAC /* FeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699C626AB777D00CA7AAC /* FeedData.swift */; };
+		211699DE26AB778600CA7AAC /* RootModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699CF26AB778300CA7AAC /* RootModel.swift */; };
+		211699E126AB778600CA7AAC /* Children.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699D226AB778600CA7AAC /* Children.swift */; };
+		211699E326AB7E4800CA7AAC /* ChildData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699E226AB7E4800CA7AAC /* ChildData.swift */; };
+		211699E526AB7EFD00CA7AAC /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699E426AB7EFD00CA7AAC /* APIManager.swift */; };
+		211699E726AB895C00CA7AAC /* FeedListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699E626AB895C00CA7AAC /* FeedListCell.swift */; };
+		211699E926AB89F300CA7AAC /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699E826AB89F300CA7AAC /* RemoteImageView.swift */; };
+		211699EC26AB8AFE00CA7AAC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699EB26AB8AFE00CA7AAC /* UIColor+Extensions.swift */; };
+		211699EE26AB8B6200CA7AAC /* URLSession+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699ED26AB8B6200CA7AAC /* URLSession+Extensions.swift */; };
+		211699F026AB8C4200CA7AAC /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699EF26AB8C4200CA7AAC /* Cancellable.swift */; };
+		211699F226ACA5F200CA7AAC /* FeedDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699F126ACA5F200CA7AAC /* FeedDataLoader.swift */; };
+		211699F426ACA66A00CA7AAC /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699F326ACA66A00CA7AAC /* FeedService.swift */; };
+		211699F626ACACF700CA7AAC /* FeedListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699F526ACACF700CA7AAC /* FeedListData.swift */; };
+		211699F826ACAF7E00CA7AAC /* FeedListLoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699F726ACAF7E00CA7AAC /* FeedListLoadingCell.swift */; };
+		211699FA26ACAF8B00CA7AAC /* FeedListErrorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699F926ACAF8B00CA7AAC /* FeedListErrorCell.swift */; };
+		211699FC26ACD14100CA7AAC /* MockFeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699FB26ACD14100CA7AAC /* MockFeedService.swift */; };
+		211699FE26ACD1A500CA7AAC /* MockServiceMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211699FD26ACD1A500CA7AAC /* MockServiceMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +54,7 @@
 		2116998B26AB6CE700CA7AAC /* RedditFeeds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedditFeeds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2116998E26AB6CE700CA7AAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2116999026AB6CE700CA7AAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2116999226AB6CE700CA7AAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2116999526AB6CE700CA7AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2116999226AB6CE700CA7AAC /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
 		2116999726AB6CEA00CA7AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2116999A26AB6CEA00CA7AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2116999C26AB6CEA00CA7AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +64,23 @@
 		211699AC26AB6CEA00CA7AAC /* RedditFeedsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedditFeedsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		211699B026AB6CEA00CA7AAC /* RedditFeedsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditFeedsUITests.swift; sourceTree = "<group>"; };
 		211699B226AB6CEA00CA7AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		211699C626AB777D00CA7AAC /* FeedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedData.swift; sourceTree = "<group>"; };
+		211699CF26AB778300CA7AAC /* RootModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModel.swift; sourceTree = "<group>"; };
+		211699D226AB778600CA7AAC /* Children.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Children.swift; sourceTree = "<group>"; };
+		211699E226AB7E4800CA7AAC /* ChildData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildData.swift; sourceTree = "<group>"; };
+		211699E426AB7EFD00CA7AAC /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		211699E626AB895C00CA7AAC /* FeedListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListCell.swift; sourceTree = "<group>"; };
+		211699E826AB89F300CA7AAC /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		211699EB26AB8AFE00CA7AAC /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		211699ED26AB8B6200CA7AAC /* URLSession+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extensions.swift"; sourceTree = "<group>"; };
+		211699EF26AB8C4200CA7AAC /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		211699F126ACA5F200CA7AAC /* FeedDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataLoader.swift; sourceTree = "<group>"; };
+		211699F326ACA66A00CA7AAC /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
+		211699F526ACACF700CA7AAC /* FeedListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListData.swift; sourceTree = "<group>"; };
+		211699F726ACAF7E00CA7AAC /* FeedListLoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListLoadingCell.swift; sourceTree = "<group>"; };
+		211699F926ACAF8B00CA7AAC /* FeedListErrorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListErrorCell.swift; sourceTree = "<group>"; };
+		211699FB26ACD14100CA7AAC /* MockFeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFeedService.swift; sourceTree = "<group>"; };
+		211699FD26ACD1A500CA7AAC /* MockServiceMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServiceMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +133,10 @@
 			children = (
 				2116998E26AB6CE700CA7AAC /* AppDelegate.swift */,
 				2116999026AB6CE700CA7AAC /* SceneDelegate.swift */,
-				2116999226AB6CE700CA7AAC /* ViewController.swift */,
-				2116999426AB6CE700CA7AAC /* Main.storyboard */,
+				211699EA26AB8ADC00CA7AAC /* Util */,
+				211699C126AB762E00CA7AAC /* ViewModel */,
+				211699C026AB762800CA7AAC /* View */,
+				211699BE26AB761900CA7AAC /* Model */,
 				2116999726AB6CEA00CA7AAC /* Assets.xcassets */,
 				2116999926AB6CEA00CA7AAC /* LaunchScreen.storyboard */,
 				2116999C26AB6CEA00CA7AAC /* Info.plist */,
@@ -115,6 +149,8 @@
 			children = (
 				211699A526AB6CEA00CA7AAC /* RedditFeedsTests.swift */,
 				211699A726AB6CEA00CA7AAC /* Info.plist */,
+				211699FB26ACD14100CA7AAC /* MockFeedService.swift */,
+				211699FD26ACD1A500CA7AAC /* MockServiceMethod.swift */,
 			);
 			path = RedditFeedsTests;
 			sourceTree = "<group>";
@@ -126,6 +162,50 @@
 				211699B226AB6CEA00CA7AAC /* Info.plist */,
 			);
 			path = RedditFeedsUITests;
+			sourceTree = "<group>";
+		};
+		211699BE26AB761900CA7AAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				211699CF26AB778300CA7AAC /* RootModel.swift */,
+				211699C626AB777D00CA7AAC /* FeedData.swift */,
+				211699D226AB778600CA7AAC /* Children.swift */,
+				211699E226AB7E4800CA7AAC /* ChildData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		211699C026AB762800CA7AAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2116999226AB6CE700CA7AAC /* FeedsViewController.swift */,
+				211699E626AB895C00CA7AAC /* FeedListCell.swift */,
+				211699E826AB89F300CA7AAC /* RemoteImageView.swift */,
+				211699F726ACAF7E00CA7AAC /* FeedListLoadingCell.swift */,
+				211699F926ACAF8B00CA7AAC /* FeedListErrorCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		211699C126AB762E00CA7AAC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				211699E426AB7EFD00CA7AAC /* APIManager.swift */,
+				211699F126ACA5F200CA7AAC /* FeedDataLoader.swift */,
+				211699F326ACA66A00CA7AAC /* FeedService.swift */,
+				211699F526ACACF700CA7AAC /* FeedListData.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		211699EA26AB8ADC00CA7AAC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				211699EB26AB8AFE00CA7AAC /* UIColor+Extensions.swift */,
+				211699ED26AB8B6200CA7AAC /* URLSession+Extensions.swift */,
+				211699EF26AB8C4200CA7AAC /* Cancellable.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +313,6 @@
 			files = (
 				2116999B26AB6CEA00CA7AAC /* LaunchScreen.storyboard in Resources */,
 				2116999826AB6CEA00CA7AAC /* Assets.xcassets in Resources */,
-				2116999626AB6CE700CA7AAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +337,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2116999326AB6CE700CA7AAC /* ViewController.swift in Sources */,
+				211699D526AB778600CA7AAC /* FeedData.swift in Sources */,
+				211699DE26AB778600CA7AAC /* RootModel.swift in Sources */,
+				211699F226ACA5F200CA7AAC /* FeedDataLoader.swift in Sources */,
+				211699EE26AB8B6200CA7AAC /* URLSession+Extensions.swift in Sources */,
+				211699EC26AB8AFE00CA7AAC /* UIColor+Extensions.swift in Sources */,
+				211699E526AB7EFD00CA7AAC /* APIManager.swift in Sources */,
+				211699F426ACA66A00CA7AAC /* FeedService.swift in Sources */,
+				211699F626ACACF700CA7AAC /* FeedListData.swift in Sources */,
+				2116999326AB6CE700CA7AAC /* FeedsViewController.swift in Sources */,
+				211699E326AB7E4800CA7AAC /* ChildData.swift in Sources */,
 				2116998F26AB6CE700CA7AAC /* AppDelegate.swift in Sources */,
+				211699E126AB778600CA7AAC /* Children.swift in Sources */,
+				211699FA26ACAF8B00CA7AAC /* FeedListErrorCell.swift in Sources */,
 				2116999126AB6CE700CA7AAC /* SceneDelegate.swift in Sources */,
+				211699F826ACAF7E00CA7AAC /* FeedListLoadingCell.swift in Sources */,
+				211699E926AB89F300CA7AAC /* RemoteImageView.swift in Sources */,
+				211699F026AB8C4200CA7AAC /* Cancellable.swift in Sources */,
+				211699E726AB895C00CA7AAC /* FeedListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +363,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				211699A626AB6CEA00CA7AAC /* RedditFeedsTests.swift in Sources */,
+				211699FC26ACD14100CA7AAC /* MockFeedService.swift in Sources */,
+				211699FE26ACD1A500CA7AAC /* MockServiceMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +392,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2116999426AB6CE700CA7AAC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2116999526AB6CE700CA7AAC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2116999926AB6CEA00CA7AAC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
